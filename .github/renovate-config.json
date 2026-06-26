@@ -6,7 +6,7 @@
   "baseBranchPatterns": [
     "main"
   ],
-  "enabledManagers": ["gomod"],
+  "enabledManagers": ["gomod", "github-actions"],
   "postUpdateOptions": [
     "gomodTidy"
   ],
