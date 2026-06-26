@@ -3,7 +3,7 @@
   "extends": [":gitSignOff"],
   "requireConfig": "ignored",
   "gitAuthor": "Renovate Bot <renovate@hollyhome.ath.cx>",
-  "baseBranches": [
+  "baseBranchPatterns": [
     "main"
   ],
   "enabledManagers": ["gomod"],
@@ -46,20 +46,20 @@
     },
     {
       "description": "Disable updates for packages that typically require code changes",
-      "matchPackagePrefixes": [
-        "golang.org/x/",
-        "google.golang.org/",
-        "go.opentelemetry.io/",
-        "github.com/onsi/ginkgo/",
-        "github.com/go-openapi/",
-        "github.com/grpc-ecosystem/",
-        "github.com/prometheus/procfs",
-        "go.etcd.io/etcd/",
-        "k8s.io/",
-        "kubevirt.io/",
-        "sigs.k8s.io/",
-        "github.com/openshift/",
-        "github.com/prometheus-operator/"
+      "matchPackageNames": [
+        "golang.org/x/{/,}**",
+        "google.golang.org/{/,}**",
+        "go.opentelemetry.io/{/,}**",
+        "github.com/onsi/ginkgo/{/,}**",
+        "github.com/go-openapi/{/,}**",
+        "github.com/grpc-ecosystem/{/,}**",
+        "github.com/prometheus/procfs{/,}**",
+        "go.etcd.io/etcd/{/,}**",
+        "k8s.io/{/,}**",
+        "kubevirt.io/{/,}**",
+        "sigs.k8s.io/{/,}**",
+        "github.com/openshift/{/,}**",
+        "github.com/prometheus-operator/{/,}**"
       ],
       "enabled": false
     },
